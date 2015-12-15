@@ -2,6 +2,7 @@
 flask flask-sqlalchemy mysql 实验
 
 一 安装环境
+
 python2.7环境下mysql已安装
 
 1.安装Flask
