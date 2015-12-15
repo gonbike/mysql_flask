@@ -45,13 +45,13 @@ class Dboj():
         return app
 
 if __name__ == '__main__':
-    #db.create_all()
-    #innset=User(username='aaitmin',password='123456')
-    #db.session.add(inset)
-    #db.session.commit()
-    insetA=Alticle(userId=int(12),title="you?",text="I love you")
-    db.session.add(insetA)
+    db.create_all()
+    innset=User(username='admin',password='123456')
+    db.session.add(innset)
     db.session.commit()
-    entries=Alticle.query.with_entities(Alticle.title,Alticle.text).all()
-    res= User.query.with_entities(User.password).all()
-    print entries
+    #insetA=Alticle(userId=int(12),title="you?",text="I love you")
+    #db.session.add(insetA)
+    #db.session.commit()
+    #entries=Alticle.query.with_entities(Alticle.title,Alticle.text).all()
+    #res= User.query.with_entities(User.password).all()
+    #print entries
